@@ -12,7 +12,7 @@ A simple python script to extract features using deep learning models that are m
 
 ## Instructions (How to use?)
 
-#### 1. Make sure that your folder structure is organized as follows:
+#### 1. Make sure that your image folder structure is organized as follows:
 
 :arrow_down_small: :file_folder: my_images_dataset
   > :arrow_forward: :file_folder: images_1 </br>
