@@ -27,6 +27,7 @@ A simple python script to extract features using deep learning models that are m
   * `--output_dir` - Directory to save the output file
   * `--file_type` - Type of output file: **txt**, **pkl** or **pbz2**
 
+An example:
 ```bash
 python3 scr_custom_feature_extractor.py --directory "C:\my_images_dataset" --model vgg19 --output_dir "C:\my_features" --file_type pbz2 
 ```
