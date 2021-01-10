@@ -53,7 +53,7 @@ filetype = args['file_type']
 print("[INFO]: Loading pre-trained model...")
 
 if model_name == "resnet50":
-    model = ResNet50(weights='imagenet', include_top=False, pooling="max")
+    model = ResNet50(weights='imagenet', include_top=False, pooling="avg")
 elif model_name == "vgg16":
 
     base_model = VGG16(weights='imagenet')
@@ -66,19 +66,19 @@ elif model_name == "vgg19":
                   outputs=base_model.get_layer('fc1').output)
 elif model_name == "inception_v3":
 
-    model = InceptionV3(weights='imagenet', include_top=False, pooling="max")
+    model = InceptionV3(weights='imagenet', include_top=False, pooling="avg")
 elif model_name == "efficient_net_b0":
 
     model = tf.keras.applications.EfficientNetB0(
         weights="imagenet",
         include_top=False,
-        pooling="max")
+        pooling="avg")
 elif model_name == "nas_large":
     
     model = tf.keras.applications.NASNetLarge(
         weights="imagenet",
         include_top=False,
-        pooling="max")
+        pooling="avg")
 
 # List to save extracted features
 feature_list = []
